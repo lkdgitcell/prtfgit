@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page-transition"></div>
+  <div id="scroll-progress-back" role="progressbar" aria-label="Progression du défilement"></div>
+  <div id="scroll-progress" role="progressbar" aria-label="Progression du défilement"></div>
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut" style="display:none;">↑</button>
+
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <a href="#accueil" class="logo-link" aria-label="Retour à l'accueil">
+        <span class="logo-text">Mon Portfolio</span>
+      </a>
+      <button id="burger" class="burger" aria-label="Menu" aria-controls="mainNavLinks" aria-expanded="false">
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+      <nav class="nav-main" id="mainNav" aria-label="Navigation principale">
+        <div id="mainNavLinks" class="nav-links" role="list">
+          <a href="#accueil" class="nav-link active" aria-current="page">Accueil</a>
+          <a href="#synthese" class="nav-link">Synthèse</a>
+          <a href="#parcours" class="nav-link">Parcours</a>
+          <a href="#projets" class="nav-link">Projets</a>
+          <a href="#certifications" class="nav-link">Certifications</a>
+          <a href="#competences" class="nav-link">Compétences</a>
+          <a href="#veille" class="nav-link">Veille</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <button id="darkmode-toggle" class="darkmode-toggle" aria-label="Basculer le mode sombre">
+        <span id="darkmode-icon">🌙</span>
+      </button>
+    </div>
+  </header>
+
+<main>
+  <section id="accueil" class="section hero-section fade-in" aria-label="Accueil">
+    <div class="centered">
+      <h1 class="main-title with-bar">Loïc KOEHLY-DELGADO</h1>
+      <div class="section-bar"></div>
+      <p class="hero-desc">BTS SIO SISR à l'IPSSI<br>
+      Passionné par l'architecture des systèmes et la sécurisation des réseaux</p>
+      <div class="hero-highlights">
+        <span class="highlight-item">• Infrastructure Système</span>
+        <span class="highlight-item">• Virtualisation</span>
+        <span class="highlight-item">• Sécurité Réseau</span>
+      </div>
+      <p class="hero-mission">Ma mission : transformer les défis techniques en solutions sécurisées, 
+      en m'appuyant sur une expertise pratique acquise à travers des projets concrets et des expériences terrain.</p>
+      <p class="hero-vision">Dans un écosystème IT en perpétuelle évolution, je me positionne comme un futur profil prêt à relever de nouveaux défis</p>
+      <a href="#parcours" class="button-cta ripple">Découvrir mon parcours</a>
+    </div>
+  </section>
+
+
+    <section id="synthese" class="section fade-in" aria-label="Synthèse">
+      <h2 class="subtitle with-bar">Synthèse</h2>
+      <div class="section-bar"></div>
+          <p>Cliquez sur le bouton ci-dessous pour avoir accès à mon tableau de synthèse complet</p>
+          <a href="synthese.pdf" class="download-pdf-btn button-cta ripple" download>Télécharger la Synthèse PDF</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="parcours" class="section fade-in" aria-label="Parcours">
+      <h2 class="subtitle with-bar">Parcours</h2>
+      <div class="section-bar"></div>
+      <ul class="timeline" aria-label="Étapes du parcours">
+        <li>
+          <div class="timeline-step fade-in-timeline" tabindex="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title with-bar">2024 – 2026 – IPSSI Ecole d'Informatique, Montévrain</div>
+              <div class="small-bar"></div>
+              <div class="timeline-desc">BTS SIO (Services Informatiques aux Organisations) , Option SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-step fade-in-timeline" tabindex="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title with-bar">2022 – 2024 – Lycée Clément-Ader, Tournan-En-brie</div>
+              <div class="small-bar"></div>
+              <div class="timeline-desc">BAC STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), Option SIN (Systèmes d'Information et Numérique)</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-step fade-in-timeline" tabindex="0">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-title with-bar">2021 - 2022 - Lycée Charles-le-Chauve, Roissy-En-Brie</div>
+              <div class="small-bar"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+<section id="projets" class="section fade-in" aria-label="Projets">
+  <h2 class="subtitle with-bar">Projets / Activités</h2>
+  <div class="section-bar"></div>
+  <div class="cards-list">
+    <article class="card">
+      <div>
+        <img src="projet1.jpeg" alt="Miniature projet 1" class="card-image">
+        <div class="card-title with-bar">Projet GSB (SISR)</div>
+        <div class="small-bar"></div>
+        <p>• Création et configuration de réseaux avec Cisco Packet Tracer<br>
+           • Configuration d'adresses IP sur des routeurs, machines et switchs<br>
+           • Interconnexion des équipements réseaux</p>
+      </div>
+    </article>
+    <article class="card">
+      <div>
+        <img src="projet2.jpeg" alt="Miniature projet 2" class="card-image">
+        <div class="card-title with-bar">Projet Bibliothèque (SLAM)</div>
+        <div class="small-bar"></div>
+        <p>• Création d'un site web dynamique pour une bibliothèque en ligne<br>
+           • Utilisation d'HTML/CSS et PHP<br>
+           • Organisation et mise en page du contenu web</p>
+      </div>
+    </article>
+    <article class="card">
+      <div>
+        <img src="scc.jpg" alt="Miniature projet 3" class="card-image">
+        <div class="card-title with-bar">Stage : SCC France</div>
+        <div class="small-bar"></div>
+        <p>• Proposition de solutions d'infrastructure<br>
+           • Installation et configuration d'éléments d'infrastructure<br>
+           • Remplacement d'éléments défectueux ou obsolètes<br>
+           • Mise à jour de la documentation technique</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+
+
+    <section id="certifications" class="section fade-in" aria-label="Certifications">
+      <h2 class="subtitle with-bar">Certifications</h2>
+      <div class="section-bar"></div>
+      <div class="cards-list">
+        <article class="card">
+          <div>
+            <img src="certif1.jpeg" alt="Certification 1" class="card-image">
+            <div class="card-title with-bar">Cisco Networking Academy</div>
+            <div class="small-bar"></div>
+            <p>Introduction à la cybersécurité obtenu le : 01/2025</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+<section id="competences" class="section fade-in" aria-label="Compétences">
+  <h2 class="subtitle with-bar">Compétences</h2>
+  <div class="section-bar"></div>
+  <div class="cards-list">
+    <article class="card">
+      <div class="card-title with-bar">Suite Logiciels</div>
+      <div class="small-bar"></div>
+      <p>Maitrise de différents outils : Pack Office365, VM Ware WorkStation, Cisco Packet Tracer, Visual Studio Code..</p>
+    </article>
+    <article class="card">
+      <div class="card-title with-bar">Travail Collaboratif</div>
+      <div class="small-bar"></div>
+      <p>Capacité à travailler en mode projet, bonne communication face différents aux environnements de travail</p>
+    </article>
+    <article class="card">
+      <div class="card-title with-bar">Résolution de Problèmes</div>
+      <div class="small-bar"></div>
+      <p>Approche méthodique, capacité d'analyse, autonomie dans la recherche de solutions</p>
+    </article>
+  </div>
+</section>
+
+
+
+<section id="veille" class="section fade-in" aria-label="Veille Numérique">
+  <h2 class="subtitle with-bar">Veille Numérique</h2>
+  <div class="section-bar"></div>
+  <p>Je réalise une veille technologique approfondie sur la protection de la vie privée et la sécurité des données personnelles. Cette démarche vise à comprendre les enjeux réglementaires, les technologies émergentes de protection et les meilleures pratiques en matière de confidentialité numérique.</p>
+  
+  <div class="veille-content">
+    <div class="veille-card">
+      <h3>Thèmes surveillés</h3>
+      <ul>
+        <li>Réglementation des données (RGPD, lois sur la confidentialité, sanctions)</li>
+        <li>Technologies de chiffrement (chiffrement homomorphe, zero-knowledge, blockchain)</li>
+        <li>Protection de la vie privée (anonymisation, pseudonymisation, privacy by design)</li>
+        <li>Incidents de sécurité (fuites de données, violations de confidentialité, impact utilisateurs)</li>
+      </ul>
+    </div>
+
+    <div class="veille-card">
+      <h3>Sources utilisées</h3>
+      <ul>
+        <li><strong>CNIL</strong> : guides pratiques et actualités réglementaires sur la protection des données</li>
+        <li><strong>YouTube</strong> : Christophe Boutry, French Privacy, Underscore_, Techlore, Mental Outlaw</li>
+        <li><strong>Sites Web</strong> : CNIL, LINC (Laboratoire d'Innovation Numérique), EFF (Electronic Frontier Foundation)</li>
+      </ul>
+    </div>
+
+    <div class="veille-card">
+      <h3>Outils pratiques</h3>
+      <ul>
+        <li><strong>GrapheneOS</strong> : système d'exploitation mobile axé sur la sécurité et la confidentialité</li>
+        <li><strong>Privacy Badger</strong> : extension pour bloquer les trackers et cookies de suivi</li>
+        <li><strong>Tor Browser</strong> : navigation anonyme et contournement de la censure</li>
+      </ul>
+    </div>
+
+    <p class="veille-conclusion">Cette veille me permet de saisir les évolutions légales, d'identifier les technologies de protection innovantes et de proposer des stratégies de confidentialité adaptées aux besoins actuels des organisations.</p>
+  </div>
+</section>
+
+
+    <section id="contact" class="section fade-in" aria-label="Contact">
+      <h2 class="subtitle with-bar">Contact</h2>
+      <div class="section-bar"></div>
+      <form class="form-contact" id="contactForm" autocomplete="off">
+        <input id="nom" name="nom" type="text" class="form-input" placeholder="Nom" required>
+        <input id="email" name="email" type="email" class="form-input" placeholder="E-mail" required>
+        <textarea id="message" name="message" class="form-input" placeholder="Votre message" rows="4" required></textarea>
+        <button id="sendBtn" type="submit" class="send-btn button-cta ripple">
+          <span>Envoyer</span>
+        </button>
+        <div class="form-message" id="formMessage" hidden></div>
+      </form>
+      <div class="contact-links">
+        <a href="mailto:loickoehly@gmail.com" class="contact-link" title="Envoyer un E-mail">
+          <img src="mail_icon.jpeg" alt="Envoyer un E-mail" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://www.linkedin.com/in/loic-k-41892a341/" class="contact-link" target="_blank" rel="noopener" title="LinkedIn">
+          <img src="linkedin_icon.jpeg" alt="LinkedIn" style="width: 24px; height: 24px;">
+        </a>
+        <a href="https://github.com/lkdgitcell" class="contact-link" target="_blank" rel="noopener" title="GitHub">
+          <img src="github_icon.jpeg" alt="GitHub" style="width: 24px; height: 24px;">
+        </a>
+      </div>
+    </section>
+    
+    <section id="cv" class="section fade-in" aria-label="CV">
+      <h2 class="subtitle with-bar">CV</h2>
+      <div class="section-bar"></div>
+      <div class="cv-center">
+        <p>Cliquez sur le bouton ci-dessous pour avoir accès à mon CV complet</p>
+        <a href="cv.pdf" class="download-cv-btn button-cta ripple" download>Télécharger le CV</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-links">
+        <a href="#accueil" class="footer-link">Accueil</a>
+        <a href="#synthese" class="footer-link">Synthèse</a>
+        <a href="#parcours" class="footer-link">Parcours</a>
+        <a href="#projets" class="footer-link">Projets</a>
+        <a href="#competences" class="footer-link">Compétences</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/lkdgitcell" target="_blank" class="footer-icon" aria-label="Github">
+          <img src="github_icon.jpeg" alt="Icone Github">
+        </a>
+        <a href="https://www.linkedin.com/in/loic-k-41892a341/" target="_blank" class="footer-icon" aria-label="LinkedIn">
+          <img src="linkedin_icon.jpeg" alt="Icone LinkedIn">
+        </a>
+        <a href="mailto:loickoehly@gmail.com" class="footer-icon" aria-label="Email">
+          <img src="mail_icon.jpeg" alt="Icone Email">
+        </a>
+      </div>
+      <p class="footer-text">© 2025. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('mainNavLinks');
+    
+    burger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+      burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+
+    const links = document.querySelectorAll('.nav-link');
+    const sections = Array.from(document.querySelectorAll('section.section'));
+    
+    window.addEventListener('scroll', () => {
+      let scrollPos = window.scrollY + 80;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (scrollPos >= sections[i].offsetTop) {
+          links.forEach(link => link.classList.remove('active'));
+          document.querySelectorAll(`[href="#${sections[i].id}"]`).forEach(link => link.classList.add('active'));
+          break;
+        }
+      }
+
+      const scrollToTopBtn = document.getElementById('scrollToTop');
+      scrollToTopBtn.style.display = (window.scrollY > 20) ? 'block' : 'none';
+    });
+
+    document.getElementById('scrollToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    function appearTimeline() {
+      document.querySelectorAll('.fade-in-timeline').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 30) el.classList.add('grow-in');
+      });
+    }
+    
+    window.addEventListener('scroll', appearTimeline);
+    window.addEventListener('DOMContentLoaded', appearTimeline);
+    
+    function appearOnScroll() {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 50) el.classList.add('appear');
+      });
+    }
+    
+    window.addEventListener('scroll', appearOnScroll);
+    window.addEventListener('DOMContentLoaded', appearOnScroll);
+
+    const scrollProgress = document.getElementById('scroll-progress');
+    const scrollProgressBack = document.getElementById('scroll-progress-back');
+    const sectionsForProgress = document.querySelectorAll('main > section.section');
+    
+    window.addEventListener('scroll', () => {
+      let total = 0, max = 0, scrollY = window.scrollY;
+      sectionsForProgress.forEach(sec => { max += sec.offsetHeight; });
+      for (let sec of sectionsForProgress) {
+        if (scrollY > sec.offsetTop + sec.offsetHeight) total += sec.offsetHeight;
+        else if (scrollY > sec.offsetTop) total += scrollY - sec.offsetTop;
+      }
+      let percent = Math.min((total / max) * 100, 100);
+      scrollProgressBack.style.width = '100vw';
+      scrollProgress.style.width = percent + '%';
+    });
+    window.dispatchEvent(new Event('scroll'));
+
+    const form = document.getElementById('contactForm');
+    const sendBtn = document.getElementById('sendBtn');
+    const formMessage = document.getElementById('formMessage');
+    
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      
+      formMessage.textContent = '';
+      formMessage.className = 'form-message';
+      formMessage.hidden = true;
+      sendBtn.disabled = false;
+      
+      const name = document.getElementById('nom');
+      const email = document.getElementById('email');
+      const message = document.getElementById('message');
+      
+      [name, email, message].forEach(field => {
+        field.classList.remove('input-error');
+      });
+
+      if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+        formMessage.textContent = "Merci de remplir chaque champ.";
+        formMessage.classList.add('field-error');
+        formMessage.hidden = false;
+        
+        [name, email, message].forEach(field => {
+          if (!field.value.trim()) {
+            field.classList.add('input-error');
+            field.classList.add('shake');
+            setTimeout(() => field.classList.remove('shake'), 370);
+          }
+        });
+        return;
+      }
+      
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value)) {
+        formMessage.textContent = "Veuillez entrer une adresse e-mail valide.";
+        formMessage.classList.add('field-error');
+        formMessage.hidden = false;
+        return;
+      }
+
+      sendBtn.textContent = "Envoi...";
+      sendBtn.classList.add('sending');
+      sendBtn.disabled = true;
+
+      setTimeout(() => {
+        sendBtn.textContent = "Envoyé !";
+        sendBtn.classList.remove('sending');
+        sendBtn.classList.add('sent');
+        formMessage.textContent = "Votre message a bien été envoyé !";
+        formMessage.classList.remove('field-error');
+        formMessage.classList.add('field-success');
+        formMessage.hidden = false;
+        form.reset();
+        setTimeout(() => {
+          sendBtn.textContent = "Envoyer";
+          sendBtn.classList.remove('sent');
+          sendBtn.disabled = false;
+          formMessage.textContent = "";
+          formMessage.hidden = true;
+        }, 2100);
+      }, 1100);
+    });
+
+    document.querySelectorAll('.form-input').forEach(input => {
+      input.addEventListener('focus', () => input.classList.remove('input-error'));
+    });
+
+    document.querySelectorAll('.ripple').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const circle = document.createElement("span");
+        circle.classList.add("ripple-wave");
+        const rect = btn.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        circle.style.width = circle.style.height = size + 'px';
+        circle.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        circle.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        btn.appendChild(circle);
+        circle.addEventListener('animationend', () => {
+          circle.remove();
+        });
+      });
+    });
+    
+    const darkmodeToggle = document.getElementById('darkmode-toggle');
+    darkmodeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('toggle-dark');
+      const icon = document.getElementById('darkmode-icon');
+      icon.textContent = document.body.classList.contains('toggle-dark') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
