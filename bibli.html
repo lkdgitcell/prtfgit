@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet [NOM_PROJET] - Mon Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Inter:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page-transition"></div>
+  <div id="scroll-progress-back" role="progressbar" aria-label="Progression du défilement"></div>
+  <div id="scroll-progress" role="progressbar" aria-label="Progression du défilement"></div>
+  
+  <header class="header">
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">Portfolio</span>
+        </a>
+        <div class="nav-links" id="mainNavLinks">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="index.html#projets" class="nav-link">Projets</a>
+          <a href="index.html#contact" class="nav-link">Contact</a>
+        </div>
+        <button class="nav-burger" id="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
 
+  <main class="main">
+    <section class="hero-project fade-in">
+      <div class="hero-content">
+        <div class="hero-breadcrumb">
+          <a href="index.html" class="breadcrumb-link">Accueil</a>
+          <span class="breadcrumb-separator">/</span>
+          <a href="index.html#projets" class="breadcrumb-link">Projets</a>
+          <span class="breadcrumb-separator">/</span>
+          <span class="breadcrumb-current">[NOM_PROJET]</span>
+        </div>
+        <h1 class="hero-title">[TITRE_PROJET]</h1>
+        <p class="hero-subtitle">[SOUS_TITRE_PROJET]</p>
+        <div class="project-meta">
+          <span class="project-tag">[CATEGORIE]</span>
+          <span class="project-date">[DATE]</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="[IMAGE_PROJET]" alt="[TITRE_PROJET]" class="project-main-image">
+      </div>
+    </section>
+
+    <section class="project-content fade-in">
+      <div class="content-container">
+        <div class="project-sidebar">
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Détails du projet</h3>
+            <div class="sidebar-info">
+              <div class="info-item">
+                <span class="info-label">Durée</span>
+                <span class="info-value">[DUREE]</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Technologies</span>
+                <span class="info-value">[TECHNOLOGIES]</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Statut</span>
+                <span class="info-value">[STATUT]</span>
+              </div>
+              <div class="info-item">
+                <span class="info-label">Équipe</span>
+                <span class="info-value">[EQUIPE]</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="sidebar-section">
+            <h3 class="sidebar-title">Compétences acquises</h3>
+            <div class="skills-list">
+              <span class="skill-tag">[COMPETENCE_1]</span>
+              <span class="skill-tag">[COMPETENCE_2]</span>
+              <span class="skill-tag">[COMPETENCE_3]</span>
+              <span class="skill-tag">[COMPETENCE_4]</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-main">
+          <div class="content-section">
+            <h2 class="section-title">Contexte et objectifs</h2>
+            <div class="section-bar"></div>
+            <p class="section-text">
+              [DESCRIPTION_CONTEXTE]
+            </p>
+            <ul class="objectives-list">
+              <li>[OBJECTIF_1]</li>
+              <li>[OBJECTIF_2]</li>
+              <li>[OBJECTIF_3]</li>
+            </ul>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">Réalisations</h2>
+            <div class="section-bar"></div>
+            <div class="achievements-grid">
+              <div class="achievement-item">
+                <div class="achievement-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="achievement-content">
+                  <h3 class="achievement-title">[REALISATION_1_TITRE]</h3>
+                  <p class="achievement-desc">[REALISATION_1_DESC]</p>
+                </div>
+              </div>
+              <div class="achievement-item">
+                <div class="achievement-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                  </svg>
+                </div>
+                <div class="achievement-content">
+                  <h3 class="achievement-title">[REALISATION_2_TITRE]</h3>
+                  <p class="achievement-desc">[REALISATION_2_DESC]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">Galerie</h2>
+            <div class="section-bar"></div>
+            <div class="gallery-grid">
+              <div class="gallery-item">
+                <img src="[IMAGE_GALERIE_1]" alt="[DESCRIPTION_IMAGE_1]" class="gallery-image">
+              </div>
+              <div class="gallery-item">
+                <img src="[IMAGE_GALERIE_2]" alt="[DESCRIPTION_IMAGE_2]" class="gallery-image">
+              </div>
+              <div class="gallery-item">
+                <img src="[IMAGE_GALERIE_3]" alt="[DESCRIPTION_IMAGE_3]" class="gallery-image">
+              </div>
+              <div class="gallery-item">
+                <img src="[IMAGE_GALERIE_4]" alt="[DESCRIPTION_IMAGE_4]" class="gallery-image">
+              </div>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">Défis et solutions</h2>
+            <div class="section-bar"></div>
+            <div class="challenges-list">
+              <div class="challenge-item">
+                <div class="challenge-header">
+                  <h3 class="challenge-title">[DEFI_1]</h3>
+                  <span class="challenge-badge">Défi technique</span>
+                </div>
+                <p class="challenge-solution">[SOLUTION_1]</p>
+              </div>
+              <div class="challenge-item">
+                <div class="challenge-header">
+                  <h3 class="challenge-title">[DEFI_2]</h3>
+                  <span class="challenge-badge">Défi organisationnel</span>
+                </div>
+                <p class="challenge-solution">[SOLUTION_2]</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-section">
+            <h2 class="section-title">Résultats et apprentissages</h2>
+            <div class="section-bar"></div>
+            <div class="results-grid">
+              <div class="result-card">
+                <div class="result-number">[CHIFFRE_1]</div>
+                <div class="result-label">[LABEL_1]</div>
+              </div>
+              <div class="result-card">
+                <div class="result-number">[CHIFFRE_2]</div>
+                <div class="result-label">[LABEL_2]</div>
+              </div>
+              <div class="result-card">
+                <div class="result-number">[CHIFFRE_3]</div>
+                <div class="result-label">[LABEL_3]</div>
+              </div>
+            </div>
+            <p class="section-text">
+              [DESCRIPTION_APPRENTISSAGES]
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-navigation fade-in">
+      <div class="nav-container">
+        <a href="index.html#projets" class="nav-btn nav-btn-back">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Retour aux projets</span>
+        </a>
+        <div class="nav-links-project">
+          <a href="[PROJET_PRECEDENT].html" class="nav-link-project">
+            <span class="nav-label">Projet précédent</span>
+            <span class="nav-title">[TITRE_PRECEDENT]</span>
+          </a>
+          <a href="[PROJET_SUIVANT].html" class="nav-link-project">
+            <span class="nav-label">Projet suivant</span>
+            <span class="nav-title">[TITRE_SUIVANT]</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
+      <div class="footer-links">
+        <a href="index.html#contact" class="footer-link">Contact</a>
+        <a href="mailto:loickoehly@gmail.com" class="footer-link">E-mail</a>
+        <a href="https://www.linkedin.com/in/loic-k-41892a341/" class="footer-link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Retour en haut" style="display:none;">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('mainNavLinks');
+    
+    burger.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+      burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+    });
+
+    window.addEventListener('scroll', () => {
+      const scrollToTopBtn = document.getElementById('scrollToTop');
+      scrollToTopBtn.style.display = (window.scrollY > 20) ? 'block' : 'none';
+      
+      const scrollProgress = document.getElementById('scroll-progress');
+      const scrollProgressBack = document.getElementById('scroll-progress-back');
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (scrollTop / scrollHeight) * 100;
+      
+      scrollProgress.style.width = scrolled + '%';
+      scrollProgressBack.style.width = '100%';
+    });
+
+    document.getElementById('scrollToTop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    });
+
+    fadeElements.forEach(element => {
+      element.style.opacity = '0';
+      element.style.transform = 'translateY(20px)';
+      element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      observer.observe(element);
+    });
+
+    const galleryImages = document.querySelectorAll('.gallery-image');
+    galleryImages.forEach(image => {
+      image.addEventListener('click', () => {
+        const overlay = document.createElement('div');
+        overlay.className = 'gallery-overlay';
+        overlay.innerHTML = `
+          <div class="gallery-modal">
+            <button class="gallery-close">&times;</button>
+            <img src="${image.src}" alt="${image.alt}" class="gallery-modal-image">
+          </div>
+        `;
+        document.body.appendChild(overlay);
+        
+        const closeBtn = overlay.querySelector('.gallery-close');
+        closeBtn.addEventListener('click', () => {
+          document.body.removeChild(overlay);
+        });
+        
+        overlay.addEventListener('click', (e) => {
+          if (e.target === overlay) {
+            document.body.removeChild(overlay);
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
