@@ -12,26 +12,6 @@
   <div id="page-transition"></div>
   <div id="scroll-progress-back" role="progressbar" aria-label="Progression du défilement"></div>
   <div id="scroll-progress" role="progressbar" aria-label="Progression du défilement"></div>
-
-  <header class="header">
-    <nav class="nav">
-      <div class="nav-container">
-        <a href="index.html" class="nav-logo">
-          <span class="logo-text">Portfolio</span>
-        </a>
-        <div class="nav-links" id="mainNavLinks">
-          <a href="index.html" class="nav-link">Accueil</a>
-          <a href="index.html#projets" class="nav-link">Projets</a>
-          <a href="index.html#contact" class="nav-link">Contact</a>
-        </div>
-        <button class="nav-burger" id="burger" aria-label="Menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  </header>
   
   <main class="main">
     <section class="hero-project fade-in">
@@ -232,14 +212,6 @@
   </footer>
 
   <script>
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('mainNavLinks');
-    
-    burger.addEventListener('click', function() {
-      navLinks.classList.toggle('open');
-      burger.setAttribute('aria-expanded', navLinks.classList.contains('open'));
-    });
-
     const scrollToTopBtn = document.getElementById('scrollToTop');
     
     window.addEventListener('scroll', () => {
